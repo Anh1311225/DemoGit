@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quản lý Cửa hàng iPhone</title>
+    <link rel="stylesheet" type="text/css" href="./css/app.css"/>
+</head>
+<body onload="renderListIphone()">
+    <div class ="form-iphone" >
+    <h3>Thông tin sản phẩm iphone</h3>
+    <label>Tên sản phẩm</label>
+    <input type="text" id="fullname" />
+    <span id="fullname-error" class="error"></span>
+<br/>
+<label>Số máy </label>
+<input type="text" id="seri" />
+<span id="seri-error" class="error"></span>
+<br/>
+<label>Thị trường sản phẩm </label>
+<input type="text" id="market" />
+<span id="market-error" class="error"></span>
+<br/>
+<label>&nbsp;</label>
+<button onclick="save()">Lưu lại</button>
+
+</div>
+
+<div class="list-iphone" id="list-iphones">
+    <h3>Danh sách sản phẩm iphone</h3>
+    <table id="grid-iphones" width="580" border="1" cellpadding="0" cellpadding="0">
+       
+    </table>
+</div>
+
+
+
+<script src="
+https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+"></script>
+<script src="./js/iphone.js"></script>
+</body>
+</html>
